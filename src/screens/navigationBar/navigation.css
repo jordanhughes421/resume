@@ -2,11 +2,14 @@
     background-color: var(--nav-color);
     color: white;
     z-index: 2;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     width: 100%;
 }
 
+.navigation__contationer .navbar .navbar-expand-md .navbar-light{
+    position: fixed !important;
+}
 .navbar-light .navbar-nav .nav-link {
     color: var(--font-color) !important;
 }

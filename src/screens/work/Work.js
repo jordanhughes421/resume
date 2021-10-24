@@ -10,6 +10,9 @@ import { items } from '../../helpers/navigationLinks'
 import './work.css'
 import milliken from '../../images/milliken.png'
 import heatcraft from '../../images/heatcraft.png'
+import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
+
 
 function selectImage (company){
     if (company == 'milliken') {
@@ -19,16 +22,29 @@ function selectImage (company){
     }
 }
 
+function returnText (Text){
+    if (Text == 'right') {
+        return 'right'
+    }
+    if (Text == 'left') {
+        return 'left ' 
+    }
+    
+}
+
 function createTimeline(){
     return items.map((e, idx) => (
-        
+
+        <Slide direction={returnText(e.location)}>
         <TimelineItem position={e.location} stlye='timeline__component'>
-        <TimelineSeparator>
-            <TimelineDot variant='outlined'>
-                {selectImage(e.img)}
-            </TimelineDot>
-            <TimelineConnector className={e.forlast} /> 
-        </TimelineSeparator>
+
+            <TimelineSeparator>
+                <TimelineDot variant='outlined'>
+                    {selectImage(e.img)}
+                </TimelineDot>
+                <TimelineConnector className={e.forlast} /> 
+            </TimelineSeparator>
+
         <TimelineContent>
             <Typography className='title'>
                 <h5>
@@ -43,6 +59,8 @@ function createTimeline(){
             </Typography>
         </TimelineContent>
     </TimelineItem>
+    </Slide>
+
     ))
 }
 
@@ -50,9 +68,11 @@ function createTimeline(){
 function Work() {
     return (
         <div className='work__containter' id='work-experience'>
+            <Fade direction='down'>
             <h1 className='header'> 
                 Work Experience 
             </h1>
+            </Fade>
             <Timeline>
                 {createTimeline()}
             </Timeline>
