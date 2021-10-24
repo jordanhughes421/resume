@@ -3,6 +3,7 @@ import Navigation from './screens/navigationBar/NavigationBar'
 import ParticleAnimation from 'react-particle-animation'
 import Header from './screens/header/Header'
 import Education from './screens/Education/Education';
+import Work from './screens/work/Work'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           color= {{ r: 255, g: 165, b: 0, a: 255 }}
         />
         <Education />
+        <Work />
     </div>
   );
 }

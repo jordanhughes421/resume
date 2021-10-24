@@ -12,6 +12,7 @@ function Header() {
                 strings={[
                 '',  
                  'Problem Solver',
+                 'Engineer',
                  'Visionary Leader',
                  'Photographer',
                  '']}

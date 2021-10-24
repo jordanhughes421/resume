@@ -1,0 +1,57 @@
+.timeline {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+}
+
+.header {
+    text-align: center;
+}
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.title {
+    font-weight: bold;
+    
+}
+
+.contentTitle {
+    font-style: oblique;
+}
+
+.contentText {
+    font-weight: 100;
+}
+
+.work__containter {
+
+}
+
+.logo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.timeline__component {
+    padding: 3rem;
+}
+
+.MuiTimelineItem-root {
+    padding: 1px;
+    display: inline;
+
+}
+
+.MuiTimelineConnector-root {
+    height: 4rem;
+}
