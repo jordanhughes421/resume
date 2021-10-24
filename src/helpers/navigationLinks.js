@@ -4,16 +4,16 @@ export const navigationLinks = [
         ref: "#home"
     },
     {
-        name: "About me",
-        ref: "#about-me"
+        name: "Education",
+        ref: "#education"
     },
     {
-        name: "Technologies",
-        ref: "#technologies"
+        name: "Work Experience",
+        ref: "#work-experience"
     },
     {
-        name: "Portfolio",
-        ref: "#portfolio"
+        name: "Projects",
+        ref: "#projects"
     },
     {
         name: "Contact",
