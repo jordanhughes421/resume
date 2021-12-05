@@ -8,9 +8,11 @@ function Header() {
     return (
         <div className='main-info'>
             <h1>
-                Welcome to my website. (Still under construction!)
+                Welcome to my website.
             </h1>
-
+            <h1>
+                (Still under construction!)
+            </h1>
             <Typed
 
                 strings={[
