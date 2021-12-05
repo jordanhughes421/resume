@@ -8,7 +8,7 @@ function Header() {
     return (
         <div className='main-info'>
             <h1>
-                Welcome to my website
+                Welcome to my website. (Still under construction!)
             </h1>
 
             <Typed

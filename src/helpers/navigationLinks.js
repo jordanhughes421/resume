@@ -1,4 +1,3 @@
-import TimelineConnector from '@mui/lab/TimelineConnector';
 
 export const navigationLinks = [
     {
@@ -35,7 +34,7 @@ export const items = [
         img: 'milliken'
     },
     {
-        title: 'Advanced Process Improvement Engineer',
+        title: 'Advanced Process Improvement Engineer/IT Administrator',
         contentTitle: 'Milliken and Company',
         contentText: 'Jan 2021-Jun 2021',
         location: 'right',
@@ -43,7 +42,7 @@ export const items = [
         img: 'milliken'
     },
     {
-        title: 'Process Improvement Engineer',
+        title: 'Process Improvement Engineer/IT Administrator',
         contentTitle: 'Milliken and Company',
         contentText: 'May 2019-Jan 2021',
         location: 'left',
