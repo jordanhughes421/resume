@@ -20,6 +20,7 @@ function Education() {
             </Fade>
             
             <div className='education__text'>
+
                 <Slide direction='left'>
                     <div className='college__container'>
                         <img src={Mercer} alt="Mercer Seal" style={{width: 246.4, height: 220}} /> 
@@ -48,8 +49,6 @@ function Education() {
                         </div>
                     </div>
                 </Slide>
-
-
 
             </div>
         </div>
