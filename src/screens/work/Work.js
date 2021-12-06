@@ -97,7 +97,7 @@ function ExpandTimeline(job){
                     Managed quality control lab consisting of 2 lab technicians and 2 quality facilitators.
                 </li>
                 <li className='list-item'>
-                    Created CAD drawings/layouts and assisted with installation of $2.2 million capital expenditure project.
+                    Created CAD drawings/layouts for and assisted with installation of $2.2 million capital expenditure project.
                 </li>
                 <li className='list-item'>
                     Learned conversational Spanish to more effectively communicate with operators and technicians.
