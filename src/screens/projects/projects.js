@@ -28,27 +28,27 @@ function MyCarousel(){
 
 
 
-      <Carousel plugins={['arrows']} value={value} onChange={onChange}> 
+      <Carousel plugins={['arrows','centered']} value={value} onChange={onChange}> 
       <div>
-          <h3>
+          <h3 style={{width: "100%"}}>
             Senior Capstone Project: Autonomous Drone Delivery
           </h3>  
-          <p>
+          <p style={{width: "100%"}}>
             Worked with a computer engineering student and an electrical engineering student to create an autonomous drone delivery system using a DJI drone and an Arduino.
           </p>
           <div>
             <a href = {SCP} target = "_blank">View PDF</a>
           </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/J5HntapYAxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/AXubxZdtbl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/u3C_FURVODE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/J5HntapYAxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/AXubxZdtbl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/u3C_FURVODE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <div>
-          <h3>
+          <h3 style={{width: "100%"}}>
             Numerical Analysis Project: Heat Transfer Model using Matlab
           </h3>  
-          <h5>
+          <h5 style={{width: "100%"}}>
             Abstract
           </h5>
           <p>
@@ -63,17 +63,17 @@ function MyCarousel(){
           <div>
             <a href = {NAproj1PDF} target = "_blank">View PDF</a>
           </div>
-          <img src={ NAproj1 } />
+          <img src={ NAproj1 } style={{width: "50%"}}/>
       </div>
 
       <div>
-          <h3>
+          <h3 style={{width: "100%"}}>
             Numerical Analysis Project: Model of Cross-Sectional Flow using Matlab
           </h3>  
-          <h5>
+          <h5 style={{width: "100%"}}>
             Abstract
           </h5>
-          <p>
+          <p style={{width: "100%"}}>
             "This project models the cross-sectional flow field in a conduit defined by fluid passing between a
             rectangular outer shell and a circular internal pipe along the center axis. First, the problem will be
             given mathematically showing the governing equation with boundary conditions. Then, using the
@@ -84,8 +84,8 @@ function MyCarousel(){
           <div>
           <a href = {NAproj2PDF} target = "_blank">View PDF</a>
         </div>
-          <img src={ NA2pic1 } style={{width: "25%"}}/>
-          <img src={ NA2pic2 } style={{width: "25%"}}/>
+          <img src={ NA2pic1 } style={{width: "50%"}}/>
+          <img src={ NA2pic2 } style={{width: "50%"}}/>
       </div>
 
       
