@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "serve": "^11.3.2",
     "@brainhubeu/react-carousel": "^2.0.4",
     "@emotion/react": "^11.5.0",
     "@emotion/style": "^0.8.0",
