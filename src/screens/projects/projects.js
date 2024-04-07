@@ -1,18 +1,26 @@
 import React,{useState} from 'react'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import milliken from '../../images/milliken.png'
-import heatcraft from '../../images/heatcraft.png'
-import NAproj1 from '../../images/NAproj1.gif'
+import milliken from '../../images/milliken.png';
+import heatcraft from '../../images/heatcraft.png';
+import NAproj1 from '../../images/NAproj1.gif';
 import { Fade } from "react-awesome-reveal";
-import NAproj1PDF from '../../PDF/NAproj1PDF.pdf'
-import NAproj2PDF from '../../PDF/NAproj2PDF.pdf'
-import SCP from '../../PDF/SCP.pdf'
-import NA2pic1 from '../../images/NA2pic1.PNG'
-import NA2pic2 from '../../images/NA2pic2.PNG'
+import NAproj1PDF from '../../PDF/NAproj1PDF.pdf';
+import NAproj2PDF from '../../PDF/NAproj2PDF.pdf';
+import SCP from '../../PDF/SCP.pdf';
+import NA2pic1 from '../../images/NA2pic1.PNG';
+import NA2pic2 from '../../images/NA2pic2.PNG';
+import pkdata1 from '../../images/pkdata1.mp4';
+import pkdata2 from '../../images/pkdata2.PNG';
+import pkdata3 from '../../images/pkdata3.PNG';
+import pkdata4 from '../../images/pkdata4.PNG';
+import pkdata5 from '../../images/pkdata5.PNG';
+import './projects.css';
+
 
 function MyCarousel(){
   const [value, setValue] = useState(0);
+  const [showIframe, setShowIframe] = useState(false);
 
   const onChange = value => {
   setValue(value);
@@ -63,7 +71,7 @@ function MyCarousel(){
           <div>
             <a href = {NAproj1PDF} target = "_blank">View PDF</a>
           </div>
-          <img src={ NAproj1 } style={{width: "50%"}}/>
+          <img src={ NAproj1 } style={{width: "50%"}} className='gifimage'/>
       </div>
 
       <div>
@@ -88,13 +96,47 @@ function MyCarousel(){
           <img src={ NA2pic2 } style={{width: "50%"}}/>
       </div>
 
+      <div>
+          <h3 style={{width: "100%"}}>
+            Data Analysis and Visualization Project: PK Decor
+          </h3>  
+          <p style={{width: "100%"}}>
+            Utilized Python and APIs to collect and prepare ecommerce data from Etsy and Amazon, and employed Power BI for in-depth analysis and visualization. 
+            This project enhanced decision-making at PK Decor by providing insights into sales trends, product performance, and customer demographics, driving strategic business growth.
+          </p>
+          <div>
+            {!showIframe  && (
+              <button onClick={() => setShowIframe(true)}>Show Machine Log</button>
+            )}
+
+            {showIframe && (
+              <>
+                <iframe
+                  src={`${process.env.PUBLIC_URL}/temp-plot.html`}
+                  title="Machine Log"
+                  width="100%"
+                  height="600px"
+                ></iframe>
+                <button onClick={() => setShowIframe(false)}>Close</button>
+              </>
+            )}
+          </div>
+          <div>
+            <video src={ pkdata1 } style={{width: "50%"}} type="video/mp4" controls/>
+          </div>
+          <img src={ pkdata2 } style={{width: "25%"}}/>
+          <img src={ pkdata3 } style={{width: "25%"}}/>
+          <img src={ pkdata4 } style={{width: "25%"}}/>
+          <img src={ pkdata5 } style={{width: "25%"}}/>
+      </div>
+
       
 
     </Carousel>
     <Dots 
       value={value} 
       onChange={onChange} 
-      number='3'
+      number='4'
     />
   </div>
   )

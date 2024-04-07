@@ -6,10 +6,11 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
-import { items } from '../../helpers/navigationLinks'
-import './work.css'
-import milliken from '../../images/milliken.png'
-import heatcraft from '../../images/heatcraft.png'
+import { items } from '../../helpers/navigationLinks';
+import './work.css';
+import milliken from '../../images/milliken.png';
+import heatcraft from '../../images/heatcraft.png';
+import pk from '../../images/pk.png';
 import { Fade } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
 
@@ -19,6 +20,9 @@ function selectImage (company){
         return <img src={ milliken } alt='Milliken Logo' className='logo'/>
     } else if (company == 'heatcraft') {
         return <img src={ heatcraft } alt='Heatcraft Logo' className='logo'/>
+    }
+    else if (company == 'pk') {
+        return <img src={ pk } alt='PK Decor Logo' className='logo'/>
     }
 }
 
@@ -36,6 +40,28 @@ function ExpandTimeline(job){
     const [readMore,setReadMore]=useState(false);
     const linkName=readMore?'-':'+'
     var extraContent=''
+    if (job == 'CNC Operator and Data Analyst') {
+        extraContent=
+        <div>
+            <ul className="extra-content">
+                <li className='list-item'>
+                Operated 3 CNC machines and a Mimaki printer for my mom’s custom décor business and developed a data
+                visualization script for performance monitoring.
+                </li>
+                <li className='list-item'>
+                Developed new website in order to utilize AI for online marketing and centralized data for company onto
+                cloud databases.
+                </li>
+                <li className='list-item'>
+                Trained an OpenAI GPT3 machine learning model to easily generate Etsy product titles using desired
+                keywords, increased revenue by 11% YOY since implemented.
+                </li>
+                <li className='list-item'>
+                Created training documentation for various jobs in production.
+                </li>
+            </ul>
+        </div>
+    }
     if (job == 'Engineering Co-op I') {
         extraContent=
         <div>

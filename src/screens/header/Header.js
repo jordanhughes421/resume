@@ -10,9 +10,6 @@ function Header() {
             <h1>
                 Welcome to my website.
             </h1>
-            <h1>
-                (Still under construction! Projects tab currently not working on mobile.)
-            </h1>
             <Typed
 
                 strings={[

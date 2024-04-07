@@ -15,20 +15,24 @@ export const navigationLinks = [
     {
         name: "Projects",
         ref: "#projects"
-    },
-    {
-        name: "Contact",
-        ref: "#contact"
-    },
+    }
 
 ]
 
 
 export const items = [
     {
+        title: 'CNC Operator and Data Analyst',
+        contentTitle: 'PK Decor',
+        contentText: 'Mar 2022-Present',
+        location: 'right',
+        forlast: 'visible',
+        img: 'pk'
+    },
+    {
         title: 'Advanced Engineering Services Professional',
         contentTitle: 'Milliken and Company',
-        contentText: 'Jun 2021-Present',
+        contentText: 'Jun 2021-Mar 2022',
         location: 'left',
         forlast: 'visible',
         img: 'milliken'
