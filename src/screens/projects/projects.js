@@ -104,7 +104,7 @@ function MyCarousel(){
             Utilized Python and APIs to collect and prepare ecommerce data from Etsy and Amazon, and employed Power BI for in-depth analysis and visualization. 
             This project enhanced decision-making at PK Decor by providing insights into sales trends, product performance, and customer demographics, driving strategic business growth.
           </p>
-          <div>
+{/*           <div>
             {!showIframe  && (
               <button onClick={() => setShowIframe(true)}>Show Machine Log</button>
             )}
@@ -120,7 +120,7 @@ function MyCarousel(){
                 <button onClick={() => setShowIframe(false)}>Close</button>
               </>
             )}
-          </div>
+          </div> */}
           <div>
             <video src={ pkdata1 } style={{width: "50%"}} type="video/mp4" controls/>
           </div>
